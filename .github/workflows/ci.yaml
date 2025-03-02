@@ -23,7 +23,27 @@ jobs:
 
       - name: 📦 Instalar dependências
         run: |
-          pip install pandas requests
+          python -m venv .venv
+          source .venv/bin/activate
+          pip install -r requirements.txt
+
+      - name: 🔍 Criar diretórios necessários
+        run: |
+          mkdir -p bucket_api/api_typicode/csv
+          mkdir -p bucket_api/api_typicode/json
+          mkdir -p logs
+
+      - name: ✅ Validar arquivos e estrutura
+        run: |
+          ls -l
+          ls -l bucket_api/api_typicode/
+          ls -l logs/
 
       - name: 🔍 Executar o script principal
-        run: python run.py
+        run: |
+          source .venv/bin/activate
+          python run.py
+
+      - name: ✅ Verificar logs
+        run: |
+          ls -l logs/
