@@ -258,3 +258,14 @@
 2025-03-03 10:49:38 - INFO - ✅ Dados de `posts` salvos com sucesso!
 2025-03-03 10:49:38 - INFO - 
 ✅ Processo ETL concluído!
+2025-03-03 23:07:26 - INFO - 🚀 Iniciando processo ETL
+2025-03-03 23:07:26 - INFO - 🔗 API Base: https://jsonplaceholder.typicode.com
+2025-03-03 23:07:26 - INFO - 📌 Processando Endpoint: USERS
+2025-03-03 23:07:26 - INFO - ✅ Sucesso ao buscar users
+2025-03-03 23:07:26 - INFO - 📊 Estrutura do DataFrame `users`: 10 linhas, 16 colunas
+2025-03-03 23:07:26 - INFO - ✅ Dados `users` salvos com sucesso
+2025-03-03 23:07:26 - INFO - 📌 Processando Endpoint: POSTS
+2025-03-03 23:07:26 - INFO - ✅ Sucesso ao buscar posts
+2025-03-03 23:07:26 - INFO - 📊 Estrutura do DataFrame `posts`: 100 linhas, 5 colunas
+2025-03-03 23:07:26 - INFO - ✅ Dados `posts` salvos com sucesso
+2025-03-03 23:07:26 - INFO - ✅ Processo ETL concluído!
