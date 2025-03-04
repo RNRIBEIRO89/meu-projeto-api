@@ -1,52 +1,48 @@
-name: CI Pipeline  # Nome do pipeline de integração contínua (CI)
+name: CI Pipeline
 
 on:
   push:
     branches:
-      - main  # O pipeline roda sempre que há um push na branch main
+      - main
   pull_request:
     branches:
-      - main  # O pipeline também roda para pull requests na branch main
+      - main
 
 jobs:
   build:
-    runs-on: ubuntu-latest  # Define que o pipeline será executado em um ambiente Linux
+    runs-on: ubuntu-latest
 
     steps:
       - name: 🚀 Clonar repositório
-        uses: actions/checkout@v3  # Faz o checkout do código do repositório no runner do GitHub
+        uses: actions/checkout@v3  # Faz o checkout do repositório
 
       - name: 📦 Configurar ambiente Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.9"  # Define a versão do Python a ser usada no ambiente CI/CD
+          python-version: "3.9"  # Define a versão do Python a ser usada no CI/CD
 
-      - name: 📦 Criar e ativar ambiente virtual corretamente
-        run: |
-          python -m venv .venv  # Cria um ambiente virtual Python chamado .venv
-          echo "VIRTUAL_ENV=$PWD/.venv" >> $GITHUB_ENV  # Configura a variável de ambiente VIRTUAL_ENV
-          echo "$PWD/.venv/bin" >> $GITHUB_PATH  # Adiciona o ambiente virtual ao PATH do sistema
-          source .venv/bin/activate  # Ativa o ambiente virtual
+      - name: 📦 Criar ambiente virtual (sem ativação manual)
+        run: python -m venv .venv  # Cria o ambiente virtual
 
-      - name: 📦 Instalar dependências
+      - name: 📦 Instalar dependências (sem ativação manual)
         run: |
-          .venv/bin/pip install --upgrade pip  # Atualiza o gerenciador de pacotes pip
-          .venv/bin/pip install -r requirements.txt  # Instala todas as dependências do projeto
+          .venv/bin/pip install --upgrade pip  # Atualiza o pip dentro do ambiente virtual
+          .venv/bin/pip install -r requirements.txt  # Instala as dependências do projeto
 
       - name: 🔍 Criar diretórios necessários
         run: |
-          mkdir -p bucket_api/api_typicode/csv  # Garante que o diretório para CSVs existe
-          mkdir -p bucket_api/api_typicode/json  # Garante que o diretório para JSONs existe
-          mkdir -p logs  # Cria a pasta de logs se ainda não existir
+          mkdir -p bucket_api/api_typicode/csv
+          mkdir -p bucket_api/api_typicode/json
+          mkdir -p logs
 
       - name: ✅ Validar estrutura de diretórios
         run: |
-          ls -l  # Lista os arquivos do diretório raiz para verificar se tudo está correto
-          ls -l bucket_api/api_typicode/  # Lista os arquivos dentro do diretório de dados
-          ls -l logs/  # Lista os arquivos de logs, se houver
+          ls -l
+          ls -l bucket_api/api_typicode/
+          ls -l logs/
 
-      - name: 🔍 Executar o script principal
-        run: .venv/bin/python run.py  # Executa o script principal dentro do ambiente virtual
+      - name: 🔍 Executar o script principal (sem ativação do .venv)
+        run: .venv/bin/python run.py  # Executa diretamente sem ativar o ambiente virtual
 
       - name: ✅ Verificar logs
-        run: ls -l logs/  # Exibe os logs gerados pelo processo
+        run: ls -l logs/
