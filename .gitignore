@@ -1,3 +1,4 @@
 # Ignorar arquivos de dados da API
 output/
 bucket_api/api_typicode/
+execution.log/
