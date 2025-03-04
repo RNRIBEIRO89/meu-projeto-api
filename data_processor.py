@@ -17,7 +17,7 @@ def save_dataframe(df, filename):
     os.makedirs(csv_dir, exist_ok=True)
     os.makedirs(json_dir, exist_ok=True)
 
-    # Caminhos completos para salvar os arquivos
+    # Caminhos para salvar os arquivos
     csv_path = os.path.join(csv_dir, f"{filename}_{timestamp}.csv")
     json_path = os.path.join(json_dir, f"{filename}_{timestamp}.json")
 
