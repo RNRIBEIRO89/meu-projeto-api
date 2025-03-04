@@ -21,10 +21,15 @@ jobs:
         with:
           python-version: "3.9"
 
-      - name: 📦 Instalar dependências
+      - name: 📦 Criar e ativar ambiente virtual
         run: |
           python -m venv .venv
-          source .venv/bin/activate
+          echo "VIRTUAL_ENV=.venv" >> $GITHUB_ENV
+          echo "$PWD/.venv/bin" >> $GITHUB_PATH
+
+      - name: 📦 Instalar dependências
+        run: |
+          pip install --upgrade pip
           pip install -r requirements.txt
 
       - name: 🔍 Criar diretórios necessários
@@ -40,10 +45,7 @@ jobs:
           ls -l logs/
 
       - name: 🔍 Executar o script principal
-        run: |
-          source .venv/bin/activate
-          python run.py
+        run: python run.py
 
       - name: ✅ Verificar logs
-        run: |
-          ls -l logs/
+        run: ls -l logs/
