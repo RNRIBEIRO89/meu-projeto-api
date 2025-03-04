@@ -21,16 +21,17 @@ jobs:
         with:
           python-version: "3.9"
 
-      - name: 📦 Criar e ativar ambiente virtual
+      - name: 📦 Criar e ativar ambiente virtual corretamente
         run: |
           python -m venv .venv
-          echo "VIRTUAL_ENV=.venv" >> $GITHUB_ENV
+          echo "VIRTUAL_ENV=$PWD/.venv" >> $GITHUB_ENV
           echo "$PWD/.venv/bin" >> $GITHUB_PATH
+          source .venv/bin/activate
 
       - name: 📦 Instalar dependências
         run: |
-          pip install --upgrade pip
-          pip install -r requirements.txt
+          .venv/bin/pip install --upgrade pip
+          .venv/bin/pip install -r requirements.txt
 
       - name: 🔍 Criar diretórios necessários
         run: |
@@ -38,14 +39,14 @@ jobs:
           mkdir -p bucket_api/api_typicode/json
           mkdir -p logs
 
-      - name: ✅ Validar arquivos e estrutura
+      - name: ✅ Validar estrutura de diretórios
         run: |
           ls -l
           ls -l bucket_api/api_typicode/
           ls -l logs/
 
       - name: 🔍 Executar o script principal
-        run: python run.py
+        run: .venv/bin/python run.py
 
       - name: ✅ Verificar logs
         run: ls -l logs/
