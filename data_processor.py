@@ -6,7 +6,7 @@ from config import OUTPUT_DIR
 
 def save_dataframe(df, filename):
     """
-    Salva um DataFrame em CSV e JSON no diretório correto.
+    Salva um DataFrame em CSV e JSON no diretório correto
     """
     timestamp = datetime.now().strftime("%Y%m%d_%Hh%Mm%Ss")
     csv_dir = os.path.join(OUTPUT_DIR, "csv")
