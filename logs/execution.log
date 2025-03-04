@@ -1,0 +1,260 @@
+2025-03-03 01:41:56 - INFO - 🚀 Iniciando processo ETL...
+2025-03-03 01:41:56 - INFO - 🔍 Processando endpoint: USERS
+2025-03-03 01:41:57 - INFO - ✅ Sucesso ao buscar users
+2025-03-03 01:41:57 - INFO - ✅ users: 10 registros extraídos
+2025-03-03 01:41:57 - INFO - 📂 Dados salvos em: output/csv/users_20250303_01h41m57s.csv, output/json/users_20250303_01h41m57s.json
+2025-03-03 01:41:57 - INFO - 🔍 Processando endpoint: POSTS
+2025-03-03 01:41:57 - INFO - ✅ Sucesso ao buscar posts
+2025-03-03 01:41:57 - INFO - ✅ posts: 100 registros extraídos
+2025-03-03 01:41:57 - INFO - 📂 Dados salvos em: output/csv/posts_20250303_01h41m57s.csv, output/json/posts_20250303_01h41m57s.json
+2025-03-03 01:41:57 - INFO - ✅ Processo ETL concluído!
+2025-03-03 01:53:14 - INFO - 🚀 Iniciando processo ETL...
+2025-03-03 01:53:14 - INFO - 🔍 Processando endpoint: USERS
+2025-03-03 01:53:14 - INFO - ✅ Sucesso ao buscar users
+2025-03-03 01:53:14 - INFO - 📊 Exibindo os primeiros 10 registros:
+   id                      name          username                      email  ...        company.name                       company.catchPhrase                            company.bs               dt_inc
+0   1             Leanne Graham              Bret          Sincere@april.biz  ...     Romaguera-Crona    Multi-layered client-server neural-net           harness real-time e-markets  2025-03-03 01:53:14
+1   2              Ervin Howell         Antonette          Shanna@melissa.tv  ...        Deckow-Crist            Proactive didactic contingency      synergize scalable supply-chains  2025-03-03 01:53:14
+2   3          Clementine Bauch          Samantha         Nathan@yesenia.net  ...  Romaguera-Jacobson         Face to face bifurcated interface       e-enable strategic applications  2025-03-03 01:53:14
+3   4          Patricia Lebsack          Karianne  Julianne.OConner@kory.org  ...       Robel-Corkery  Multi-tiered zero tolerance productivity  transition cutting-edge web services  2025-03-03 01:53:14
+4   5          Chelsey Dietrich            Kamren   Lucio_Hettinger@annie.ca  ...         Keebler LLC      User-centric fault-tolerant solution      revolutionize end-to-end systems  2025-03-03 01:53:14
+5   6      Mrs. Dennis Schulist  Leopoldo_Corkery    Karley_Dach@jasper.info  ...   Considine-Lockman        Synchronised bottom-line interface      e-enable innovative applications  2025-03-03 01:53:14
+6   7           Kurtis Weissnat      Elwyn.Skiles     Telly.Hoeger@billy.biz  ...         Johns Group        Configurable multimedia task-force         generate enterprise e-tailers  2025-03-03 01:53:14
+7   8  Nicholas Runolfsdottir V     Maxime_Nienow       Sherwood@rosamond.me  ...     Abernathy Group             Implemented secondary concept         e-enable extensible e-tailers  2025-03-03 01:53:14
+8   9           Glenna Reichert          Delphine    Chaim_McDermott@dana.io  ...       Yost and Sons     Switchable contextually-based project      aggregate real-time technologies  2025-03-03 01:53:14
+9  10        Clementina DuBuque    Moriah.Stanton     Rey.Padberg@karina.biz  ...          Hoeger LLC         Centralized empowering task-force              target end-to-end models  2025-03-03 01:53:14
+
+[10 rows x 16 columns]
+2025-03-03 01:53:14 - INFO - ✅ users: 10 registros extraídos
+2025-03-03 02:00:44 - INFO - 🚀 Iniciando processo ETL...
+2025-03-03 02:00:44 - INFO - 🔍 Processando endpoint: USERS
+2025-03-03 02:00:44 - INFO - ✅ Sucesso ao buscar users
+2025-03-03 02:00:44 - INFO - 📊 Exibindo os primeiros 10 registros:
+   id                      name          username                      email  ...        company.name                       company.catchPhrase                            company.bs               dt_inc
+0   1             Leanne Graham              Bret          Sincere@april.biz  ...     Romaguera-Crona    Multi-layered client-server neural-net           harness real-time e-markets  2025-03-03 02:00:44
+1   2              Ervin Howell         Antonette          Shanna@melissa.tv  ...        Deckow-Crist            Proactive didactic contingency      synergize scalable supply-chains  2025-03-03 02:00:44
+2   3          Clementine Bauch          Samantha         Nathan@yesenia.net  ...  Romaguera-Jacobson         Face to face bifurcated interface       e-enable strategic applications  2025-03-03 02:00:44
+3   4          Patricia Lebsack          Karianne  Julianne.OConner@kory.org  ...       Robel-Corkery  Multi-tiered zero tolerance productivity  transition cutting-edge web services  2025-03-03 02:00:44
+4   5          Chelsey Dietrich            Kamren   Lucio_Hettinger@annie.ca  ...         Keebler LLC      User-centric fault-tolerant solution      revolutionize end-to-end systems  2025-03-03 02:00:44
+5   6      Mrs. Dennis Schulist  Leopoldo_Corkery    Karley_Dach@jasper.info  ...   Considine-Lockman        Synchronised bottom-line interface      e-enable innovative applications  2025-03-03 02:00:44
+6   7           Kurtis Weissnat      Elwyn.Skiles     Telly.Hoeger@billy.biz  ...         Johns Group        Configurable multimedia task-force         generate enterprise e-tailers  2025-03-03 02:00:44
+7   8  Nicholas Runolfsdottir V     Maxime_Nienow       Sherwood@rosamond.me  ...     Abernathy Group             Implemented secondary concept         e-enable extensible e-tailers  2025-03-03 02:00:44
+8   9           Glenna Reichert          Delphine    Chaim_McDermott@dana.io  ...       Yost and Sons     Switchable contextually-based project      aggregate real-time technologies  2025-03-03 02:00:44
+9  10        Clementina DuBuque    Moriah.Stanton     Rey.Padberg@karina.biz  ...          Hoeger LLC         Centralized empowering task-force              target end-to-end models  2025-03-03 02:00:44
+
+[10 rows x 16 columns]
+2025-03-03 02:00:44 - INFO - ✅ users: 10 registros extraídos
+2025-03-03 02:00:44 - INFO - 📂 Dados salvos em: bucket_api/api_typicode/csv/users_20250303_02h00m44s.csv, bucket_api/api_typicode/json/users_20250303_02h00m44s.json
+2025-03-03 02:00:44 - INFO - 🔍 Processando endpoint: POSTS
+2025-03-03 02:00:44 - INFO - ✅ Sucesso ao buscar posts
+2025-03-03 02:00:44 - INFO - 📊 Exibindo os primeiros 10 registros:
+   userId  id                                              title                                               body               dt_inc
+0       1   1  sunt aut facere repellat provident occaecati e...  quia et suscipit\nsuscipit recusandae consequu...  2025-03-03 02:00:44
+1       1   2                                       qui est esse  est rerum tempore vitae\nsequi sint nihil repr...  2025-03-03 02:00:44
+2       1   3  ea molestias quasi exercitationem repellat qui...  et iusto sed quo iure\nvoluptatem occaecati om...  2025-03-03 02:00:44
+3       1   4                               eum et est occaecati  ullam et saepe reiciendis voluptatem adipisci\...  2025-03-03 02:00:44
+4       1   5                                 nesciunt quas odio  repudiandae veniam quaerat sunt sed\nalias aut...  2025-03-03 02:00:44
+5       1   6                 dolorem eum magni eos aperiam quia  ut aspernatur corporis harum nihil quis provid...  2025-03-03 02:00:44
+6       1   7                               magnam facilis autem  dolore placeat quibusdam ea quo vitae\nmagni q...  2025-03-03 02:00:44
+7       1   8                           dolorem dolore est ipsam  dignissimos aperiam dolorem qui eum\nfacilis q...  2025-03-03 02:00:44
+8       1   9  nesciunt iure omnis dolorem tempora et accusan...  consectetur animi nesciunt iure dolore\nenim q...  2025-03-03 02:00:44
+9       1  10                        optio molestias id quia eum  quo et expedita modi cum officia vel magni\ndo...  2025-03-03 02:00:44
+2025-03-03 02:00:44 - INFO - ✅ posts: 100 registros extraídos
+2025-03-03 02:00:44 - INFO - 📂 Dados salvos em: bucket_api/api_typicode/csv/posts_20250303_02h00m44s.csv, bucket_api/api_typicode/json/posts_20250303_02h00m44s.json
+2025-03-03 02:00:44 - INFO - ✅ Processo ETL concluído!
+2025-03-03 10:45:59 - INFO - 🚀 Iniciando processo ETL...
+2025-03-03 10:45:59 - INFO - 🔍 Processando endpoint: USERS
+2025-03-03 10:45:59 - INFO - ✅ Sucesso ao buscar users
+2025-03-03 10:45:59 - INFO - 📊 Exibindo os primeiros 10 registros:
+   id                      name          username                      email  ...        company.name                       company.catchPhrase                            company.bs               dt_inc
+0   1             Leanne Graham              Bret          Sincere@april.biz  ...     Romaguera-Crona    Multi-layered client-server neural-net           harness real-time e-markets  2025-03-03 10:45:59
+1   2              Ervin Howell         Antonette          Shanna@melissa.tv  ...        Deckow-Crist            Proactive didactic contingency      synergize scalable supply-chains  2025-03-03 10:45:59
+2   3          Clementine Bauch          Samantha         Nathan@yesenia.net  ...  Romaguera-Jacobson         Face to face bifurcated interface       e-enable strategic applications  2025-03-03 10:45:59
+3   4          Patricia Lebsack          Karianne  Julianne.OConner@kory.org  ...       Robel-Corkery  Multi-tiered zero tolerance productivity  transition cutting-edge web services  2025-03-03 10:45:59
+4   5          Chelsey Dietrich            Kamren   Lucio_Hettinger@annie.ca  ...         Keebler LLC      User-centric fault-tolerant solution      revolutionize end-to-end systems  2025-03-03 10:45:59
+5   6      Mrs. Dennis Schulist  Leopoldo_Corkery    Karley_Dach@jasper.info  ...   Considine-Lockman        Synchronised bottom-line interface      e-enable innovative applications  2025-03-03 10:45:59
+6   7           Kurtis Weissnat      Elwyn.Skiles     Telly.Hoeger@billy.biz  ...         Johns Group        Configurable multimedia task-force         generate enterprise e-tailers  2025-03-03 10:45:59
+7   8  Nicholas Runolfsdottir V     Maxime_Nienow       Sherwood@rosamond.me  ...     Abernathy Group             Implemented secondary concept         e-enable extensible e-tailers  2025-03-03 10:45:59
+8   9           Glenna Reichert          Delphine    Chaim_McDermott@dana.io  ...       Yost and Sons     Switchable contextually-based project      aggregate real-time technologies  2025-03-03 10:45:59
+9  10        Clementina DuBuque    Moriah.Stanton     Rey.Padberg@karina.biz  ...          Hoeger LLC         Centralized empowering task-force              target end-to-end models  2025-03-03 10:45:59
+
+[10 rows x 16 columns]
+2025-03-03 10:45:59 - INFO - ✅ users: 10 registros extraídos
+2025-03-03 10:45:59 - INFO - 📂 Dados salvos em: bucket_api/api_typicode/csv/users_20250303_10h45m59s.csv, bucket_api/api_typicode/json/users_20250303_10h45m59s.json
+2025-03-03 10:45:59 - INFO - 🔍 Processando endpoint: POSTS
+2025-03-03 10:45:59 - INFO - ✅ Sucesso ao buscar posts
+2025-03-03 10:45:59 - INFO - 📊 Exibindo os primeiros 10 registros:
+   userId  id                                              title                                               body               dt_inc
+0       1   1  sunt aut facere repellat provident occaecati e...  quia et suscipit\nsuscipit recusandae consequu...  2025-03-03 10:45:59
+1       1   2                                       qui est esse  est rerum tempore vitae\nsequi sint nihil repr...  2025-03-03 10:45:59
+2       1   3  ea molestias quasi exercitationem repellat qui...  et iusto sed quo iure\nvoluptatem occaecati om...  2025-03-03 10:45:59
+3       1   4                               eum et est occaecati  ullam et saepe reiciendis voluptatem adipisci\...  2025-03-03 10:45:59
+4       1   5                                 nesciunt quas odio  repudiandae veniam quaerat sunt sed\nalias aut...  2025-03-03 10:45:59
+5       1   6                 dolorem eum magni eos aperiam quia  ut aspernatur corporis harum nihil quis provid...  2025-03-03 10:45:59
+6       1   7                               magnam facilis autem  dolore placeat quibusdam ea quo vitae\nmagni q...  2025-03-03 10:45:59
+7       1   8                           dolorem dolore est ipsam  dignissimos aperiam dolorem qui eum\nfacilis q...  2025-03-03 10:45:59
+8       1   9  nesciunt iure omnis dolorem tempora et accusan...  consectetur animi nesciunt iure dolore\nenim q...  2025-03-03 10:45:59
+9       1  10                        optio molestias id quia eum  quo et expedita modi cum officia vel magni\ndo...  2025-03-03 10:45:59
+2025-03-03 10:45:59 - INFO - ✅ posts: 100 registros extraídos
+2025-03-03 10:45:59 - INFO - 📂 Dados salvos em: bucket_api/api_typicode/csv/posts_20250303_10h45m59s.csv, bucket_api/api_typicode/json/posts_20250303_10h45m59s.json
+2025-03-03 10:45:59 - INFO - ✅ Processo ETL concluído!
+2025-03-03 10:49:38 - INFO - 🚀 Iniciando processo ETL...
+
+2025-03-03 10:49:38 - INFO - 🔗 API Base: https://jsonplaceholder.typicode.com
+2025-03-03 10:49:38 - INFO - 
+============================================================
+2025-03-03 10:49:38 - INFO - 📌 Endpoint: USERS
+2025-03-03 10:49:38 - INFO - ============================================================
+2025-03-03 10:49:38 - INFO - ➡️  Buscando dados do endpoint `users`...
+2025-03-03 10:49:38 - INFO - ✅ Sucesso ao buscar users
+2025-03-03 10:49:38 - INFO - ✅ Dados brutos recebidos de `users`:
+2025-03-03 10:49:38 - INFO - [
+    {
+        "id": 1,
+        "name": "Leanne Graham",
+        "username": "Bret",
+        "email": "Sincere@april.biz",
+        "address": {
+            "street": "Kulas Light",
+            "suite": "Apt. 556",
+            "city": "Gwenborough",
+            "zipcode": "92998-3874",
+            "geo": {
+                "lat": "-37.3159",
+                "lng": "81.1496"
+            }
+        },
+        "phone": "1-770-736-8031 x56442",
+        "website": "hildegard.org",
+        "company": {
+            "name": "Romaguera-Crona",
+            "catchPhrase": "Multi-layered client-server neural-net",
+            "bs": "harness real-time e-markets"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Ervin Howell",
+        "username": "Antonette",
+        "email": "Shanna@melissa.tv",
+        "address": {
+            "street": "Victor Plains",
+            "suite": "Suite 879",
+            "city": "Wisokyburgh",
+            "zipcode": "90566-7771",
+            "geo": {
+                "lat": "-43.9509",
+                "lng": "-34.4618"
+            }
+        },
+        "phone": "010-692-6593 x09125",
+        "website": "anastasia.net",
+        "company": {
+            "name": "Deckow-Crist",
+            "catchPhrase": "Proactive didactic contingency",
+            "bs": "synergize scalable supply-chains"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Clementine Bauch",
+        "username": "Samantha",
+        "email": "Nathan@yesenia.net",
+        "address": {
+            "street": "Douglas Extension",
+            "suite": "Suite 847",
+            "city": "McKenziehaven",
+            "zipcode": "59590-4157",
+            "geo": {
+                "lat": "-68.6102",
+                "lng": "-47.0653"
+            }
+        },
+        "phone": "1-463-123-4447",
+        "website": "ramiro.info",
+        "company": {
+            "name": "Romaguera-Jacobson",
+            "catchPhrase": "Face to face bifurcated interface",
+            "bs": "e-enable strategic applications"
+        }
+    }
+]
+2025-03-03 10:49:38 - INFO - 🔄 Normalizando JSON com `pd.json_normalize()`...
+2025-03-03 10:49:38 - INFO - 📊 Exibindo os primeiros 10 registros:
+   id                      name          username                      email  ...        company.name                       company.catchPhrase                            company.bs               dt_inc
+0   1             Leanne Graham              Bret          Sincere@april.biz  ...     Romaguera-Crona    Multi-layered client-server neural-net           harness real-time e-markets  2025-03-03 10:49:38
+1   2              Ervin Howell         Antonette          Shanna@melissa.tv  ...        Deckow-Crist            Proactive didactic contingency      synergize scalable supply-chains  2025-03-03 10:49:38
+2   3          Clementine Bauch          Samantha         Nathan@yesenia.net  ...  Romaguera-Jacobson         Face to face bifurcated interface       e-enable strategic applications  2025-03-03 10:49:38
+3   4          Patricia Lebsack          Karianne  Julianne.OConner@kory.org  ...       Robel-Corkery  Multi-tiered zero tolerance productivity  transition cutting-edge web services  2025-03-03 10:49:38
+4   5          Chelsey Dietrich            Kamren   Lucio_Hettinger@annie.ca  ...         Keebler LLC      User-centric fault-tolerant solution      revolutionize end-to-end systems  2025-03-03 10:49:38
+5   6      Mrs. Dennis Schulist  Leopoldo_Corkery    Karley_Dach@jasper.info  ...   Considine-Lockman        Synchronised bottom-line interface      e-enable innovative applications  2025-03-03 10:49:38
+6   7           Kurtis Weissnat      Elwyn.Skiles     Telly.Hoeger@billy.biz  ...         Johns Group        Configurable multimedia task-force         generate enterprise e-tailers  2025-03-03 10:49:38
+7   8  Nicholas Runolfsdottir V     Maxime_Nienow       Sherwood@rosamond.me  ...     Abernathy Group             Implemented secondary concept         e-enable extensible e-tailers  2025-03-03 10:49:38
+8   9           Glenna Reichert          Delphine    Chaim_McDermott@dana.io  ...       Yost and Sons     Switchable contextually-based project      aggregate real-time technologies  2025-03-03 10:49:38
+9  10        Clementina DuBuque    Moriah.Stanton     Rey.Padberg@karina.biz  ...          Hoeger LLC         Centralized empowering task-force              target end-to-end models  2025-03-03 10:49:38
+
+[10 rows x 16 columns]
+2025-03-03 10:49:38 - INFO - 📊 Dataset `users`: 10 linhas, 16 colunas
+2025-03-03 10:49:38 - INFO - 🔍 Exemplo dos primeiros registros do DataFrame:
+2025-03-03 10:49:38 - INFO -    id              name   username                      email                  phone        website     address.street address.suite   address.city address.zipcode address.geo.lat address.geo.lng        company.name                       company.catchPhrase                            company.bs               dt_inc
+0   1     Leanne Graham       Bret          Sincere@april.biz  1-770-736-8031 x56442  hildegard.org        Kulas Light      Apt. 556    Gwenborough      92998-3874        -37.3159         81.1496     Romaguera-Crona    Multi-layered client-server neural-net           harness real-time e-markets  2025-03-03 10:49:38
+1   2      Ervin Howell  Antonette          Shanna@melissa.tv    010-692-6593 x09125  anastasia.net      Victor Plains     Suite 879    Wisokyburgh      90566-7771        -43.9509        -34.4618        Deckow-Crist            Proactive didactic contingency      synergize scalable supply-chains  2025-03-03 10:49:38
+2   3  Clementine Bauch   Samantha         Nathan@yesenia.net         1-463-123-4447    ramiro.info  Douglas Extension     Suite 847  McKenziehaven      59590-4157        -68.6102        -47.0653  Romaguera-Jacobson         Face to face bifurcated interface       e-enable strategic applications  2025-03-03 10:49:38
+3   4  Patricia Lebsack   Karianne  Julianne.OConner@kory.org      493-170-9623 x156       kale.biz        Hoeger Mall      Apt. 692    South Elvis      53919-4257         29.4572       -164.2990       Robel-Corkery  Multi-tiered zero tolerance productivity  transition cutting-edge web services  2025-03-03 10:49:38
+4   5  Chelsey Dietrich     Kamren   Lucio_Hettinger@annie.ca          (254)954-1289   demarco.info       Skiles Walks     Suite 351     Roscoeview           33263        -31.8129         62.5342         Keebler LLC      User-centric fault-tolerant solution      revolutionize end-to-end systems  2025-03-03 10:49:38
+2025-03-03 10:49:38 - INFO - 💾 Convertendo para CSV e JSON...
+2025-03-03 10:49:38 - INFO - 📂 Dados salvos em: bucket_api/api_typicode/csv/users_20250303_10h49m38s.csv, bucket_api/api_typicode/json/users_20250303_10h49m38s.json
+2025-03-03 10:49:38 - INFO - ✅ Dados de `users` salvos com sucesso!
+2025-03-03 10:49:38 - INFO - 
+============================================================
+2025-03-03 10:49:38 - INFO - 📌 Endpoint: POSTS
+2025-03-03 10:49:38 - INFO - ============================================================
+2025-03-03 10:49:38 - INFO - ➡️  Buscando dados do endpoint `posts`...
+2025-03-03 10:49:38 - INFO - ✅ Sucesso ao buscar posts
+2025-03-03 10:49:38 - INFO - ✅ Dados brutos recebidos de `posts`:
+2025-03-03 10:49:38 - INFO - [
+    {
+        "userId": 1,
+        "id": 1,
+        "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+        "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+    },
+    {
+        "userId": 1,
+        "id": 2,
+        "title": "qui est esse",
+        "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+    },
+    {
+        "userId": 1,
+        "id": 3,
+        "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
+        "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
+    }
+]
+2025-03-03 10:49:38 - INFO - 🔄 Normalizando JSON com `pd.json_normalize()`...
+2025-03-03 10:49:38 - INFO - 📊 Exibindo os primeiros 10 registros:
+   userId  id                                              title                                               body               dt_inc
+0       1   1  sunt aut facere repellat provident occaecati e...  quia et suscipit\nsuscipit recusandae consequu...  2025-03-03 10:49:38
+1       1   2                                       qui est esse  est rerum tempore vitae\nsequi sint nihil repr...  2025-03-03 10:49:38
+2       1   3  ea molestias quasi exercitationem repellat qui...  et iusto sed quo iure\nvoluptatem occaecati om...  2025-03-03 10:49:38
+3       1   4                               eum et est occaecati  ullam et saepe reiciendis voluptatem adipisci\...  2025-03-03 10:49:38
+4       1   5                                 nesciunt quas odio  repudiandae veniam quaerat sunt sed\nalias aut...  2025-03-03 10:49:38
+5       1   6                 dolorem eum magni eos aperiam quia  ut aspernatur corporis harum nihil quis provid...  2025-03-03 10:49:38
+6       1   7                               magnam facilis autem  dolore placeat quibusdam ea quo vitae\nmagni q...  2025-03-03 10:49:38
+7       1   8                           dolorem dolore est ipsam  dignissimos aperiam dolorem qui eum\nfacilis q...  2025-03-03 10:49:38
+8       1   9  nesciunt iure omnis dolorem tempora et accusan...  consectetur animi nesciunt iure dolore\nenim q...  2025-03-03 10:49:38
+9       1  10                        optio molestias id quia eum  quo et expedita modi cum officia vel magni\ndo...  2025-03-03 10:49:38
+2025-03-03 10:49:38 - INFO - 📊 Dataset `posts`: 100 linhas, 5 colunas
+2025-03-03 10:49:38 - INFO - 🔍 Exemplo dos primeiros registros do DataFrame:
+2025-03-03 10:49:38 - INFO -    userId  id                                                                       title                                                                                                                                                                                                               body               dt_inc
+0       1   1  sunt aut facere repellat provident occaecati excepturi optio reprehenderit                                                  quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto  2025-03-03 10:49:38
+1       1   2                                                                qui est esse  est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla  2025-03-03 10:49:38
+2       1   3                 ea molestias quasi exercitationem repellat qui ipsa sit aut                                            et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut  2025-03-03 10:49:38
+3       1   4                                                        eum et est occaecati                  ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit  2025-03-03 10:49:38
+4       1   5                                                          nesciunt quas odio                                                             repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque  2025-03-03 10:49:38
+2025-03-03 10:49:38 - INFO - 💾 Convertendo para CSV e JSON...
+2025-03-03 10:49:38 - INFO - 📂 Dados salvos em: bucket_api/api_typicode/csv/posts_20250303_10h49m38s.csv, bucket_api/api_typicode/json/posts_20250303_10h49m38s.json
+2025-03-03 10:49:38 - INFO - ✅ Dados de `posts` salvos com sucesso!
+2025-03-03 10:49:38 - INFO - 
+✅ Processo ETL concluído!

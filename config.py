@@ -5,5 +5,6 @@ BASE_API_URL = "https://jsonplaceholder.typicode.com"
 # Endpoints que serão consumidos
 ENDPOINTS = ["users", "posts"]
 
-# Diretório de saída para salvar os dados
-OUTPUT_DIR = "/Users/rr/Documents/DEV/API/output/"
+# Diretório onde os arquivos capturados da API serão armazenados localmente
+OUTPUT_DIR = "bucket_api/api_typicode"
+LOG_DIR = "logs"

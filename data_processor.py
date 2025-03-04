@@ -1,50 +1,38 @@
 import pandas as pd
 import os
+import logging
 from datetime import datetime
+from config import OUTPUT_DIR  # Importando o caminho correto
 
-def save_dataframe(df, filename, output_dir):
+def save_dataframe(df, filename):
     """
-    Salva um DataFrame em CSV e JSON no diretório de saída, adicionando data/hora à nomenclatura.
-    
-    :param df: DataFrame do pandas
-    :param filename: Nome base do arquivo (ex: "users", "posts")
-    :param output_dir: Diretório principal onde os arquivos serão armazenados
+    Salva um DataFrame em CSV e JSON no diretório correto `bucket_api/api_typicode/`.
     """
-    
-    # Capturar data/hora atual no formato YYYYMMDD_HHhMMmSSs
     timestamp = datetime.now().strftime("%Y%m%d_%Hh%Mm%Ss")
 
-    # Criar subpastas para CSV e JSON
-    csv_dir = os.path.join(output_dir, "csv")
-    json_dir = os.path.join(output_dir, "json")
+    # Criar subpastas dentro do diretório de armazenamento correto
+    csv_dir = os.path.join(OUTPUT_DIR, "csv")
+    json_dir = os.path.join(OUTPUT_DIR, "json")
 
     os.makedirs(csv_dir, exist_ok=True)
     os.makedirs(json_dir, exist_ok=True)
 
-    # Gerar nomes dos arquivos com timestamp
+    # Caminhos completos para salvar os arquivos
     csv_path = os.path.join(csv_dir, f"{filename}_{timestamp}.csv")
     json_path = os.path.join(json_dir, f"{filename}_{timestamp}.json")
 
-    # Salvar arquivos
     df.to_csv(csv_path, index=False)
     df.to_json(json_path, orient="records", indent=4)
 
-    print(f"📂 Dados salvos em:\n- {csv_path}\n- {json_path}")
+    logging.info(f"📂 Dados salvos em: {csv_path}, {json_path}")
 
-def normalize_and_display(data, name):
+def normalize_and_display(data):
     """
-    Normaliza um JSON para DataFrame, adiciona a coluna `dt_inc` e exibe os primeiros registros.
-
-    :param data: JSON recebido da API
-    :param name: Nome do DataFrame para exibição
+    Normaliza um JSON para DataFrame e exibe os dados.
     """
-    
-    df = pd.json_normalize(data)  # Normalizar JSON para DataFrame
-
-    # Adicionar a coluna `dt_inc` com data/hora atual
+    df = pd.json_normalize(data)
     df['dt_inc'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    print(f"\n📊 DataFrame: {name}")
-    print(df.head())  # Exibir as primeiras linhas do DataFrame
+    logging.info(f"📊 Exibindo os primeiros 10 registros:\n{df.head(10)}")
 
     return df
